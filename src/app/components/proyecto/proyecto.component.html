@@ -1,0 +1,203 @@
+<header>
+    <nav class=" navbar navbar-expand-lg navbar-darkc fixed-top" data-offset="50">
+        <div class="container navegador-menu">
+            <a class="navbar-brand" href="#inicio">
+                <img src="assets/img/Grupo 1911.png " class="img-fluid">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                       
+                        <img src="assets/img/Menu-movil.png" alt="">
+    			</button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-lg-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">
+                            <p class="menu"> Inicio </p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link" href="#servicios">
+                            <p class="menu2">Servicios</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactanos">
+                            <p class="menu3">Contactanos</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
+
+<div class="container-fluid banner" id="inicio">
+    <div class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="bb">
+                        <h1 class=" texto" id="inicio">CEMIRTS</h1>
+                        <div *ngIf="mostrar" class="condicion">
+                            <p style="text-align: justify" class="sub"> {{historia.mensaje}}
+                                <p class="sub"> {{historia.mensajes}}
+                                </p>
+
+                        </div>
+
+
+                        <button (click)="mostrar = !mostrar" class="btn btn-outline-light btn-lg boton" type="button">Ver mas.</button>
+                    </div>
+
+                </div>
+                <div class="col-md-6 col-sm-12 text-center imagen">
+                    <img src="assets/img/imagen1.png " class="img-fluid" media="(max-width:500px)">
+                </div>
+            </div>
+        </div>
+        <div class="container margen-sup-1">
+            <div class="row">
+
+                <div class="imagen2 col-md-6  ">
+                    <img src="assets/img/imagen2.png " id="servicios">
+                </div>
+
+                <div class="texto1 col-md-6 ">
+                    <div class="debajo">
+                        <h1 class="men1">SERVICIOS </h1>
+                        <p class="sub2 " style="text-align: justify">El Corporativo de Telecomunicaciones Cemirts está enfocado en servicios informáticos rede de telecomunicaciones, mantenimiento preventivo
+                        </p>
+                        <p class="sub3 " style="text-align: justify">empresa líder a nivel nacional a nivel de telecomunicaciones y sistemas desarrollar nuevas tecnologías El Corporativo de Telecomunicaciones Cemirts se dio a la tarea de expandir su empresa a nivel nacional y global </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="contenedor">
+    <div class="debajo ">
+        <div class="container-fluid fondo2">
+            <div class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12 ">
+
+
+                            <div class=" card1  ">
+                                <div class="fondo3 ">
+                                    <img src="assets/img/imagen3.png " alt="Card image cap " class="voltear-img ">
+
+                                </div>
+                                <h1 class="letra ">Servicios</h1>
+                                <p class="parrafo " style="text-align: justify">El Corporativo de Telecomunicaciones Cemirts está enfocado en servicios informáticos rede de telecomunicaciones,</p>
+
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 ">
+                            <div class=" card2 ">
+                                <div class="fondo4 ">
+                                    <img class src="assets/img/imagen4.png " alt="Card image cap " class="voltear-img ">
+                                </div>
+                                <div class="abajo">
+                                    <h1 class="letra ">Papelería</h1>
+                                    <p class="parrafo " style="text-align: justify">El Corporativo de Telecomunicaciones Cemirts está enfocado en servicios informáticos rede de telecomunicaciones,</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12 ">
+                            <div class=" card3 ">
+                                <div class="fondo5 ">
+
+                                    <img class src="assets/img/imagen5.png " alt="Card image cap " class="voltear-img ">
+
+                                </div>
+                                <h1 class="letra ">Limpieza</h1>
+                                <p class="parrafo " style="text-align: justify">El Corporativo de Telecomunicaciones Cemirts está enfocado en servicios informáticos rede de telecomunicaciones,</p>
+
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-md-12 ">
+                            <h1 class=" titulo3 text-center ">
+                                Contactanos
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" container">
+                    <div class="row ">
+                        <div class="offset-md-4 col-md-4 col-sm-12 ">
+                            <form (ngSubmit)="contactForm(form.value)" #form="ngForm">
+                                <div class="form-group">
+                                    <div class=" uno " id="contactanos">
+                                        <input class="form-control" type="text " placeholder="Nombre " data-aos="fade-up " data-aos-duration="1000 " data-aos-delay="200 " name="nombre" ngModel>
+
+                                    </div>
+
+                                    <div class="dos ">
+                                        <input class="form-control " type="text " placeholder="Asunto " data-aos="fade-up " data-aos-duration="1000 " data-aos-delay="400 " name="asunto" ngModel>
+                                    </div>
+
+
+
+                                    <div class="dos">
+                                        <input class="form-control " type="email " placeholder="email " data-aos="fade-up " data-aos-duration="1000 " data-aos-delay="400 " name="email" required ngModel>
+                                    </div>
+
+
+
+                                    <div class="tres">
+                                        <textarea class="tres" class="form-control " placeholder="Mensaje " rows="4 " data-aos="fade-up " data-aos-duration="1000 " data-aos-delay="600" name="mensaje" required ngModel></textarea>
+                                    </div>
+
+
+                                    <div class="boton2  ">
+                                        <button type="submit " value="Enviar " id="boton " class="btn btn-lg btn-block " data-aos="fade-up " data-aos-duration="1000 " data-aos-delay="800 " onclick="location.reload()">
+               <p class="texbot">Enviar</p> 
+            </button>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+            <footer class="pie ">
+                <div class="container-fluid ">
+                    <div class="offset-md-4 col-md-4 col-sm-12 text-center">
+                        <img src="assets/img/Grupo 1910.png " alt=" ">
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
